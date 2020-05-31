@@ -201,6 +201,11 @@ header .logo h7{
   background-color: rgba(0, 0, 0, 0.2);
 }
 
+@media all and (max-width:769px){
+  .Acordeon{
+  text-align: justify;
+  }
+}
 
 /* FIN SECCIÓN DE ARTICULOS */
 
