@@ -71,7 +71,7 @@ header .logo h7{
   background-color: rgba(15, 78, 205, 0.5);
 }
 
-@media all and (max-width:769px){
+@media all and (max-width:1024px){
 
   header .contenedor{
     position: fixed;
