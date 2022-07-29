@@ -1,0 +1,209 @@
+/*ESTILOS GENERALES*/
+
+:root{
+  --blanco: #ffffff;
+  --oscuro: #212121;
+  --primario: #ffc107;
+  --secundario: #0097a7;
+  --gris: #757575;
+  --grisclaro: #dfd9f3;
+}
+
+/* Globales */
+html{
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+  font-size: 16px; /* 1 rem = 10px */
+  font-family: 'Krub', sans-serif;
+  background-image: linear-gradient(to top, var(--grisclaro) 0%, var(--blanco) 100%);
+}
+
+h1{
+  font-size: 3.8rem;
+}
+
+h2{
+  font-size: 2.8rem;
+}
+
+h3{
+  font-size: 1.8rem;
+}
+
+h1,h2,h3{
+  text-align: center;
+}
+
+/* BANNER PRINCIPAL */
+
+.banner{
+  width: 100%;
+  height: 500px;
+  background-image: url(img/trabajos-de-grado.jpg);
+  background-position: bottom;
+  background-size: cover;
+  margin-bottom: 20px;
+}
+
+.banner > div{
+  width: 100%;
+  height: 100%;
+}
+
+.llamada-accion{
+  text-align: center;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.llamada-accion h2{
+  font-size: 40px;
+  color: black;
+  width: 100%;
+  padding: 20px 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  max-width: 470px;
+}
+
+@media all and (max-width:769px){
+  .banner{
+    width: 100%;
+    height: 500px;
+    background-image: url(img/trabajos-de-grado.jpg);
+    background-position: top;
+    background-size: cover;
+  }
+
+  .llamada-accion h2{
+    font-size: 36px;
+  }
+}
+/* FIN DE BANNER PRINCIPAL */
+
+/* PAGINAS CENTRALES */
+
+.trabajos-de-grado{
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.Titulos{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.Titulos .T1{
+  width: 30%;
+  box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.52);
+  background-color: var(--blanco);
+  text-align: justify;
+  padding: 10px;
+}
+
+.Titulos h2,
+p{
+  margin-bottom: 10px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.Titulos h2{
+  font-size: 28px;
+}
+
+.Titulos .T2{
+  width: 30%;
+  box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.52);
+  background-color: var(--blanco);
+  text-align: justify;
+  padding: 10px;
+}
+.Titulos .T2 a button{
+  margin-top: 90px;
+}
+
+.Titulos .T3{
+  width: 30%;
+  box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.52);
+  background-color: var(--blanco);
+  text-align: justify;
+  padding: 10px;
+}
+
+.Titulos .T3 a button{
+  margin-top: 20rem;
+}
+
+.Titulos .T4{
+  width: 30%;
+  box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.52);
+  background-color: var(--blanco);
+  text-align: justify;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.Titulos .T5{
+  width: 30%;
+  box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.52);
+  background-color: var(--blanco);
+  text-align: justify;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.Titulos a button{
+  padding: 20px;
+  background-color: var(--gris);
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.Titulos a button:hover{
+  background-color: var(--primario);
+  cursor: pointer;
+}
+
+@media all and (max-width:769px){
+    .Titulos .T1{
+      width: 90%;
+      margin-top: 20px;
+    }
+    .Titulos .T2{
+      width: 90%;
+      margin-top: 20px;
+    }
+    .Titulos .T3{
+      width: 90%;
+      margin-top: 20px;
+    }
+    .Titulos .T4{
+      width: 90%;
+    }
+    .Titulos .T5{
+      width: 90%;
+    }
+
+    .Titulos .T2 a button{
+      margin-top: 1px;
+    }
+    .Titulos .T3 a button{
+      margin-top: 1px;
+    }
+}
+
+/* PAGINAS CENTRALES */
