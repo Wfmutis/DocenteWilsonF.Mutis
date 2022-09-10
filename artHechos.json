@@ -1,0 +1,34 @@
+{
+    "artHechos" : [
+        {
+            "titulo" : "Conjuntos suma pequeños en grupos hamiltonianos.",
+            "enlaceA" : "https://inmabb.criba.edu.ar/revuma/revuma.php?p=toc/vol53",
+            "publicado" : "Revista de la Unión Matemática Argentina",
+            "resumen" : "Given a group (G, ·) and positive integers r, s ≤ |G|, we denote with μG (r,s) the least possible size of the sumsets AB = {a · b : a ∈ A and b ∈ B}, where A, B run over all subsets of G, such that |A| = r and |B| = s. Let H = Q × (Z/2Z)k × C be a Hamiltonian group, where k is a non-negative integer, Q is the quaternion group of 8 elements and C is a cyclic group of odd order. We present an explicit formula for μH(r,s)."
+        },
+        {
+            "titulo" : "Conjuntos suma pequeños en p-grupos finitos.",
+            "enlaceA" : "https://revistas.uis.edu.co/index.php/revistaintegracion/article/view/2061",
+            "publicado" : "Revista Integración",
+            "resumen" : "In this paper we present an explicit formula for the function μG(r, s) = min |A·B|, where A and B are subsets of a finite p-group G with |A| = r, |B| = s and 1 =< r, s =< |G|."
+        },
+        {
+            "titulo" : "El Problema de las Estampillas de Correo.",
+            "enlaceA" : "https://revistas.udenar.edu.co/index.php/rsigma/article/view/42",
+            "publicado" : "Revista Sigma",
+            "resumen" : "Sean h un entero positivo, A un conjunto de enteros positivos, con hA se denota el conjunto de todos los enteros representables como una suma de a lo más h elementos de A (admitiendo repeticiones). El Problema de las Estampillas de Correo, consiste en encontrar el mayor entero…"
+        },
+        {
+            "titulo" : "La Estructura de Grupo de las Curvas Elípticas.",
+            "enlaceA" : "https://revistas.udenar.edu.co/index.php/rsigma/article/view/72",
+            "publicado" : "Revista Sigma",
+            "resumen" : "En la parte inicial de este artículo se presenta una introducción al estudio de las curvas elípticas definidas sobre un campo K y algunas características de dichas curvas que dependen del campo sobre el cual se han definido; posteriormente se muestra que es posible definir una operación binaria entre los puntos de una curva elíptica proporcionándole a ésta estructura de grupo abeliano. En el apéndice se presentan algoritmos desarrollados en este trabajo, implementados en el sistema de álgebra computacional MuPAD."
+        },
+        {
+            "titulo" : "Hipergrafos Cohen-Macaulay.",
+            "enlaceA" : "https://revistas.udenar.edu.co/index.php/rsigma/article/view/73",
+            "publicado" : "Revista Sigma",
+            "resumen" : "En este artículo se presenta una generalización de la segunda construcción de grafos Cohen-Macaulay, a hipergrafos simples, realizada por Rafael Villarreal en su artículo “Cohen-Macaulay Graphs”."
+        }
+    ]
+}
