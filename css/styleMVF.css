@@ -1,0 +1,280 @@
+:root{
+    --primario: #9b0101cc;
+    --claro: #e1e1e1;
+    --blanco: #ffffff;
+    --negro: #000000;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: Lora, 'Times New Roman', Times, serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+/* Globales */
+
+a{
+    text-decoration: none;
+    margin: 0;
+}
+
+ul, li {
+    list-style: none;
+    margin: 0;
+}
+
+h1,h2,h3,h4{
+    font-family: lora, 'Times New Roman', Times, serif;
+    line-height: 1.2;
+}
+
+h1{
+    font-size: 4.8rem;
+}
+
+h2{
+    font-size: 4rem;
+}
+
+h3{
+    font-size: 3.2rem;
+}
+
+h4{
+    font-size: 2.8rem;
+}
+
+img{
+    width: 100%;
+}
+
+/* INICIO HEADER - MENÚ */
+
+.header__logo {
+    background-color: var(--primario);
+    display: flex;  
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+@media (min-width: 768px) {
+    .header__logo {
+        justify-content: center;
+        padding: 2rem;
+    }
+}
+
+.header__logo img {
+    width: 10rem;
+    border-radius: 50%;
+}
+
+.header__logo-posicion {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo-posicion h4 {
+    color: var(--blanco);
+    margin-left: 1rem;
+    font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+    .header__logo img {
+        min-width: 10rem;
+    }
+
+    .header__logo h4 {
+        font-size: 2.5rem;
+    }
+}
+
+.header__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__logo span {
+    font-size: 3rem;
+    color: var(--blanco);
+    cursor: pointer;
+}
+
+.menu, .submenu {
+    padding: 0;
+    margin: 0;
+}
+
+.menu {
+    background-color: rgba(0, 0, 0, 0.829);
+    width: 100%;
+    margin-left: -100%;
+    transition: all 0.5s;
+    position: absolute;
+}
+
+@media (min-width: 768px) {
+    .menu {
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+}
+
+.menu a {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.menu__link {
+    display: block;
+    padding: 2rem;
+    color: var(--blanco);
+}
+
+.menu__link:hover, .enlace-actual {
+    background-color: rgba(255, 72, 0, 0.527);
+}
+
+.submenu {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.submenu .menu__link:hover {
+    color: rgba(255, 72, 0, 0.527);
+}
+
+.submenu .menu__link {
+    background-color: rgba(0, 0, 0, 0.829);
+    padding-left: 4rem;
+}
+
+.mostrar {
+    margin-left: 0;
+}
+
+@media (min-width: 768px) {
+    .header__logo span {
+        display: none;
+    }
+    .menu {
+        margin-left: 0;
+        display: flex;
+    }
+    .container-submenu {
+        position: relative;
+    }
+    .submenu {
+        position: absolute;
+        top: 7rem;
+        width: 20rem;
+        overflow: visible;
+        z-index: 10;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .container-submenu:hover .submenu {
+        opacity: 1;
+        visibility: visible;
+    }
+
+}
+
+/* FIN HEADER MENU */
+
+/* INICIO FOOTER */
+
+.imag-footer {
+    background: rgb(0,0,0);
+    background: linear-gradient(270deg, rgba(0,0,0,0.958420868347339) 13%, rgba(175,52,52,1) 100%);
+}
+
+@media (min-width: 769px) {
+    .imag-footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        background: rgb(0,0,0);
+        background: linear-gradient(270deg, rgba(0,0,0,0.958420868347339) 13%, rgba(175,52,52,1) 100%);
+    }
+}
+
+.img-posicion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imag-footer img {
+    width: auto;
+    max-height: 12rem;
+    padding: 1rem;
+}
+
+.imag-footer p {
+    text-align: center;
+    color: var(--blanco);
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+.imag-footer .logoU {
+    border-radius: 50%;
+}
+
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imag-footer span {
+    font-size: 4rem;
+    padding: 0.5rem;
+}
+
+.btnSubir {
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    transform: translateY(10rem);
+    transition: 0.5s;
+}
+
+.btnSubirOn {
+    transform: translateY(0);
+}
+
+.subirF {
+    color: var(--blanco);
+    background-color:red;
+    font-size: 2.5rem;
+    padding: 1rem;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+
+@media (min-width: 768px) {
+    .subirF {
+        margin: 0;
+    }
+}
+
+/* FIN FOOTER BANNER */
