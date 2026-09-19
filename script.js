@@ -66,9 +66,8 @@ const modalClose = document.getElementById("modalClose");
 const modalClose1 = document.getElementById("modalClose1");
 
 const descriptions = {
-  "Metodología de la Investigación": "Curso orientado al desarrollo de competencias para formular preguntas, objetivos, metodologías y proyectos de investigación.",
-  "Fundamentos de Innovación": "Espacio para comprender procesos de innovación, ideación, prototipado y solución de problemas.",
-  "Tecnología y Educación": "Curso dedicado a analizar y aplicar herramientas digitales para enriquecer experiencias de enseñanza y aprendizaje."
+  "Teoría de Números": "Este curso se centra en el desarrollo de competencias matemáticas a través de una de las ramas más fascinantes de la disciplina: la Teoría de Números. Su enfoque principal es potenciar habilidades clave como la resolución de problemas y la formulación de conjeturas, prescindiendo de técnicas avanzadas y presentando las ideas abstractas de forma progresiva y accesible.",
+  "Geometría de Transformaciones": "Este curso presenta la geometría de transformaciones, una expresión relativamente reciente que nace de la exitosa combinación de la geometría y el álgebra. Su nombre describe tanto el acercamiento entre estas dos áreas de las matemáticas como su contenido, ofreciendo un enfoque moderno a la Geometría Euclidiana a partir del estudio de los automorfismos en el plano y el espacio.",
 };
 
 document.querySelectorAll(".course-btn").forEach(button => {
@@ -135,3 +134,5 @@ const observer = new IntersectionObserver(entries => {
 }, { threshold: 0.12 });
 
 document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
+
+

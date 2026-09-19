@@ -58,7 +58,7 @@ button, input { font: inherit; }
   border-radius: 12px; background: var(--primary); color: white;
   font-family: "Playfair Display"; font-size: 22px;
 }
-.brand .logoUN { width: 100px; }
+.brand .logoUN { width: 100px; background-color: white; border-radius: 50%;}
 .brand strong { display:block; font-size: 14px; text-transform: uppercase;}
 .brand small { color: var(--muted); font-size: 10px; letter-spacing: .06em; text-transform: uppercase; }
 .nav-links { display: flex; align-items: center; gap: 25px; }
@@ -192,6 +192,7 @@ footer { background:#0a2c24; color:#fff; padding:25px 0; }
 .modal-list div { background:var(--cream); padding:14px; border-radius:10px; }
 .modal-list strong { display:block; font-size:11px; color:var(--primary); }
 .modal-list span { color:var(--muted); font-size:11px; }
+.list-enlace { color: #0a2c24; background-color: red;}
 
 .back-top { position:fixed; right:20px; bottom:20px; width:42px; height:42px; border:0; border-radius:50%; background:var(--primary); color:#fff; cursor:pointer; opacity:0; pointer-events:none; transition:.2s; z-index:90; }
 .back-top.visible { opacity:1; pointer-events:auto; }
@@ -228,3 +229,7 @@ footer { background:#0a2c24; color:#fff; padding:25px 0; }
   .footer-content { display:block; }
   .footer-content > p { margin-top:10px; }
 }
+
+.texto-desplegable {cursor: pointer; padding: 10px; border-radius: 5px; max-width: 500px; color:var(--muted); font-size:12px; min-height:60px;}
+.texto-desplegable summary { list-style: none; outline: none;}
+/* .texto-desplegable[open] summary {color: #666;}  */
